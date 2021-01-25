@@ -50,7 +50,9 @@ searchBtn.onclick = async function () {
 
     const searchParams = new URLSearchParams([...shops, ["search", product]]);
 
-    const response = await fetch(`/search?${searchParams.toString()}`);
+    const searchUrl = searchBtn.getAttribute("data-url");
+
+    const response = await fetch(`${searchUrl}?${searchParams.toString()}`);
 
     const products = response.ok ? (await response.json()).data : [];
 

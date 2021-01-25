@@ -197,7 +197,7 @@
                     </div>
                     <div class="control-panel-search flex-grow-1 d-flex justify-content-center align-items-stretch">
                         <input type="text" class="control-panel-search__text flex-grow-1" placeholder="Name of product you want to compare price for">
-                        <div class="cta control-panel-search__submit">Compare prices</div>
+                        <div class="cta control-panel-search__submit" data-url="{{route('compare-price')}}">Compare prices</div>
                     </div>
                 </div>
                 <div class="row price-compare__results"></div>
