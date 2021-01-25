@@ -38,13 +38,29 @@ li {
     border-top: 0;
 }
 
-.menu {
+.menu{
     margin-top: 10px;
+    width: 100%;    
+}
+
+.menu_button2 {
+    display: none !important;
+}
+
+.navbar {
+    width: 100%;
+    background: #fff !important;
+    margin-top: -10px;
+}
+
+.navbar-toggler {
+    margin: 0 auto;
 }
 
 .menu_item {
     font-weight: 700;
     font-size: 14px;
+    padding: 10px 0;
 }
 
 .menu_item a {
@@ -60,6 +76,7 @@ li {
 .logo {
     max-width: 212px;
     max-height: 41px;
+    margin-top: 10px;
 }
 
 .cta {
@@ -75,7 +92,7 @@ li {
     width: 200px;
     border: 0;
     font-weight: 700;
-    margin-top: -3px;
+    margin-top: 3px;
     text-align: center;
 }
 
@@ -107,6 +124,7 @@ li {
 .title_heading {
     font-size: 56px;
     color: #fff;
+    padding-right: 200px;
     -webkit-text-stroke: 0.02em rgba(0, 0, 0, 1);
 }
 
@@ -156,12 +174,9 @@ li {
     color: #fff;
 }
 
-.food-images {
-}
-
 .food-images_item {
     max-height: 150px;
-    max-width: 270px;
+/*    max-width: 270px;*/
     margin-bottom: 10px;
 }
 
@@ -189,6 +204,7 @@ li {
 
 .food_img {
     margin-bottom: 45px;
+    min-width: 244px;
 }
 
 .food_title {
@@ -209,6 +225,10 @@ li {
     padding: 0 55px;
 }
 
+.novus {
+    margin-bottom: 40px;
+}
+
 .food_del {
     text-transform: uppercase;
     font-size: 13px;
@@ -225,6 +245,7 @@ li {
 .food_phone {
     font-size: 18px;
     font-family: "Playfair Display", serif;
+    margin: 0 auto;
 }
 
 .food_price {
@@ -232,12 +253,17 @@ li {
     font-family: "Playfair Display", serif;
 }
 
+.price_button {
+    margin: -50px 10px 60px;
+    z-index: 3;
+}
+
 .control-panel {
-    margin: 0 50px 50px;
+    /*margin: 0 50px 50px;*/
 }
 
 .control-panel-shops {
-    margin-right: 50px;
+   /* margin-right: 50px;*/
 }
 
 .price-compare__results {
@@ -248,19 +274,12 @@ li {
     margin-right: 50px;
 }
 
-.price_button {
-    z-index: 3;
-}
-
 .footer {
     background: #303742;
     color: #90959e;
     font-size: 13px;
     text-transform: uppercase;
     padding: 72px 0 106px;
-}
-
-.socials {
 }
 
 .socials_item a {
@@ -313,13 +332,13 @@ li {
 }
 
 .modal2_body {
-    width: 950px;
-    height: 580px;
+    width: 850px;
+    height: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -295px;
-    margin-left: -475px;
+    margin-top: -230px;
+    margin-left: -425px;
     background: #fff;
     color: black;
 }
@@ -330,4 +349,174 @@ li {
 
 .hide {
     display: none;
+}
+
+@media (max-width: 1199.98px) {
+    .food {
+        margin-top: 96px;
+    }
+
+    .food_desc {
+        padding: 0 25px;
+    }
+
+    .food_details {
+        margin: 0 25px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .history{
+        text-align: center;
+    }
+
+    .video_button {
+        margin: 0 auto;
+    }
+
+    .menu {
+        text-align: center;
+    /*  z-index: 2;*/
+    }
+
+    .menu_item {
+        margin: 20px 0;
+    }
+
+    .food-images-down {
+        margin: 0;
+    }
+
+    .food-images {
+        margin: 30px auto 0;
+        text-align: center;
+    }
+
+    .food {
+        margin-top: 66px;
+    }
+
+    .title_heading{
+        padding-right: 100px;
+    }
+
+    .footer {
+        padding: 40px 0 70px;
+    }
+
+    .modal2_body {
+        width: 650px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -325px;
+    }
+
+    .grechka_video {
+        width: 650px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu_button1 {
+        display: none !important;
+    }
+
+    .menu_button2 {
+        display: flex !important;
+        width: 70px;
+    }
+
+    .grn_icon {
+        margin: 0 auto;
+    }
+
+    .menu_item a {
+        padding: 0px;
+    }
+
+    .novus {
+        margin-bottom: 16px;
+    }
+
+    .special {
+        padding-top: 50px;
+    }
+
+    .food {
+        margin-top: 30px;
+        background-color: #FFF;
+        margin-bottom: 80px;
+    }
+
+    .title_heading{
+        padding-right: 0px;
+    }
+
+    .modal2_body {
+        width: 450px;
+        height: 275px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -137px;
+        margin-left: -225px;
+    }
+
+    .grechka_video {
+        width: 450px;
+        height: 275px;
+    }
+
+    .control-panel-shops {
+        margin-left: 30px; 
+    }
+}
+
+@media (max-width: 470px) {
+    .title_heading {
+        font-size: 40px;
+    }
+
+    .title_desc {
+        font-size: 20px;
+    }
+
+    .title {
+        padding:140px 0 200px;
+    }
+
+    .line_between {
+        margin-bottom: 20px;
+    }
+
+    .line {
+        margin-top: 21px;
+    }
+
+    .credits {
+        margin-top: 23px;
+    }
+
+    .footer {
+        padding: 20px 0 40px;
+    }
+
+    .modal2_body {
+        width: 300px;
+        height: 185px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -92px;
+        margin-left: -150px;
+    }
+
+    .grechka_video {
+        width: 300px;
+        height: 185px;
+    }
 }
