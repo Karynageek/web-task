@@ -1,3 +1,11 @@
+## About
+
+A website was developed for compare prices on products by category. For a search user needs to select some of check-boxes with the desired stores and write product by category.
+The search is implemented using external API.
+If the product doesn't satisfy the search, the data won't be found.
+Otherwise, search results will be returned, including information about category, store and sorted by price in response to a query.
+View of the website is done in the style of buckwheat, it provides interesting and useful information about the value of this product. Adaptive site will allow all users on any device to use our services, compare prices for 3 popular stores in Ukraine, such as Novus, Eco Market and Metro.
+
 ## Install and Run
 
 Windows:
