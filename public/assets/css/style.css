@@ -476,6 +476,23 @@ li {
     }
 }
 
+@media (max-width: 600px) {
+    .control-panel-search {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .control-panel-shops {
+        margin-left: 0;
+        /*padding-left: 30px;*/
+    }
+
+    .control-panel-search__text {
+        margin: 0 0 15px;
+    }
+}
+
 @media (max-width: 470px) {
     .title_heading {
         font-size: 40px;
